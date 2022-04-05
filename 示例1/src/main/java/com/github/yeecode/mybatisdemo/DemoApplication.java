@@ -13,15 +13,15 @@ import java.util.List;
 @SpringBootApplication
 public class DemoApplication {
     public static void main(String[] args) throws Exception {
-        String url = "jdbc:mysql://127.0.0.1:3306/yeecode?serverTimezone=UTC";
+        String url = "jdbc:mysql://127.0.0.1:3306/fogo2050?serverTimezone=UTC";
         String userName = "root";
-        String password = "yeecode";
+        String password = "Test1234";
 
         User userParam = new User();
         userParam.setSchoolName("Sunny School");
 
         // 第一步：加载驱动程序
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
         // 第二步：获得数据库的连接
         Connection conn = DriverManager.getConnection(url, userName, password);

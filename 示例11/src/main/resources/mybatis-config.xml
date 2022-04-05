@@ -40,9 +40,9 @@
             <transactionManager type="JDBC"/>
             <dataSource type="UNPOOLED">
                 <!--数据库驱动-->
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <!--数据源地址-->
-                <property name="url" value="jdbc:mysql://127.0.0.1:3306/yeecode"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/fogo2050"/>
                 <!--数据源用户名-->
                 <property name="username" value="yeecode"/>
                 <!--数据源密码-->
@@ -59,8 +59,8 @@
         <environment id="sit">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://127.0.0.1:3306/yeecode"/>
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/fogo2050"/>
                 <property name="username" value="yeecode"/>
                 <property name="password" value="yeecode_passward"/>
                 <property name="defaultTransactionlsoltionLevel" value="1"/>
